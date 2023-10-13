@@ -1,197 +1,102 @@
 .navega3{
     
-    top: 130px;
-   
-    margin-left: 16%;
-    
-    color: #fff;
-    width: 70%;
-    z-index: 10;
-    position: absolute;
-   align-items: center;
+  top: 130px;
+ 
+  margin-left: 16%;
+  
+  color: #fff;
+  width: 70%;
+  z-index: 10;
+  position: absolute;
+ align-items: center;
 
 } 
 .navega3 h1{
-  font-size: 50px;
-  
+font-size: 50px;
+
 }
 .navega3 .navega33{
-  background: linear-gradient(to right,  #006489, #5aa0b9);
-  padding-top: 15px;
-  margin-left: 0%;
-  margin-right: 0%;
-  padding-bottom: 15px;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
+background: linear-gradient(to right,  #006489, #5aa0b9);
+padding-top: 15px;
+margin-left: 0%;
+margin-right: 0%;
+padding-bottom: 15px;
+align-items: center;
+justify-content: center;
+font-size: 15px;
 
 
 }
 .navega33 .nav-link {
-  color: white; /* Color de texto para los enlaces */
- 
+color: white; /* Color de texto para los enlaces */
+
 }
 .NavDropdown{
-  font-size: 15px;
+font-size: 15px;
 
 }
 .navega3 h1, .navega3 h2 {
-  line-height: 20px; /* Ajusta el valor según tus necesidades */
-  
+line-height: 20px; /* Ajusta el valor según tus necesidades */
+
 }
- 
+
 .navega33 .nav-link:nth-child(1) {
-  margin-right: 80px; /* Ajusta el valor según tus necesidades */
+margin-right: 80px; /* Ajusta el valor según tus necesidades */
 }
 
 .navega33 .nav-link:nth-child(2) {
-  margin-right: 80px; /* Ajusta el valor según tus necesidades */
+margin-right: 80px; /* Ajusta el valor según tus necesidades */
 }
 
 
 .navega33 .nav-link:nth-child(3) {
-  margin-right: 80px; /* Ajusta el valor según tus necesidades */
+margin-right: 80px; /* Ajusta el valor según tus necesidades */
 }
 
 .navega33 .nav-link:nth-child(4) {
-  margin-right: 80px; /* Ajusta el valor según tus necesidades */
+margin-right: 80px; /* Ajusta el valor según tus necesidades */
 }
 
 
 .navega33 .nav-link:hover {
-  color: black/* Color de texto al pasar el cursor sobre los enlaces */
+color: black/* Color de texto al pasar el cursor sobre los enlaces */
 }
-
-
-
-
-
-
-
-
 
 
 /*COLOR NAVEGACION 1*/
 .navega33 .dropdown-menu {
-  /*background-color: rgb(202, 70, 70); /* Color de fondo del menú desplegable */
-  font-size: 15px;
-  position: relative;
-  background-color: transparent;
+/*background-color: rgb(202, 70, 70); /* Color de fondo del menú desplegable */
+font-size: 15px;
+position: relative;
+background-color: transparent;
 }
 /*COLOR NAVEGACION 2*/
 .navega33 .dropdown-item {
-  color: white; /* Color de texto para los elementos del menú desplegable */
-  /*background:  rgb(8, 66, 114);*/
-  font-size: 10px;
-  width: 400px;
-  position: relative;
+color: white; /* Color de texto para los elementos del menú desplegable */
+/*background:  rgb(8, 66, 114);*/
+font-size: 10px;
+width: 400px;
+position: relative;
 
 }
 
 .navega33 .dropdown-menu::before {
-  content: "";
-  /*background-attachment: local; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  
-  background-color: rgba(33, 34, 36, 0.8); 
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  z-index: -1;
+content: "";
+/*background-attachment: local; */
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+
+background-color: rgba(33, 34, 36, 0.8); 
+width: 100%;
+height: 100%;
+opacity: 1;
+z-index: -1;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navega33 .dropdown-item:hover {
-  /*background-color: #007bff; /* Color de fondo al pasar el cursor sobre los elementos del menú desplegable */
-  background: linear-gradient(to right,  #006489, #5aa0b9);
-  color: #fff; /* Color de texto al pasar el cursor sobre los elementos del menú desplegable */
-}
-
-
-
-@media (max-width: 767px) {
-
-  .navega33{
-    background: linear-gradient(to right,  #006489, #5aa0b9);
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-   
-    justify-content: flex-start;
-    font-size: 7px;
-    height: 20px;
-  }
-
-  .navega3{
-    color:rgb(206, 123, 123);
-    top: 60px;
-   
-    margin-left: 0%;
-    width: 100%;
-    z-index: 10;
-    position: absolute;
- 
-   justify-content: left;
-   height: 10px;
-  
-  }
-
-  .navega33 .nav-link:nth-child(1) {
-    margin-right: 0px; /* Ajusta el valor según tus necesidades */
-  }
-  
-  .navega33 .nav-link:nth-child(2) {
-    margin-right: 1px; /* Ajusta el valor según tus necesidades */
-  }
-  
-  
-  .navega33 .nav-link:nth-child(3) {
-    margin-right: 1px; /* Ajusta el valor según tus necesidades */
-  }
-  
-  .navega33 .nav-link:nth-child(4) {
-    margin-right: 1px; /* Ajusta el valor según tus necesidades */
-  }
-  .navega33 .nav-link:nth-child(5) {
-    margin-right: 1px; /* Ajusta el valor según tus necesidades */
-  }
-  .navega33 .nav-link:nth-child(6) {
-    margin-right: 1px; /* Ajusta el valor según tus necesidades */
-  }
-
-  .NavDropdown{
-    font-size: 10px;
-  }
-  .dropdown-item {
-    color: #333; /* Color de texto para los elementos del menú desplegable */
-   
-    font-size: 7px;
-  }
-  
- 
+/*background-color: #007bff; /* Color de fondo al pasar el cursor sobre los elementos del menú desplegable */
+background: linear-gradient(to right,  #006489, #5aa0b9);
+color: #fff; /* Color de texto al pasar el cursor sobre los elementos del menú desplegable */
 }

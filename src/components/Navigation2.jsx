@@ -13,7 +13,7 @@ export const Navigation2 = () => {
 
           <Nav className="navega33 ml-auto">
             <Nav.Link href="/">INICIO</Nav.Link>
-            <Nav.Link href="/nosotros">NOSOTROS</Nav.Link>
+            
             <NavDropdown title="SERVICIOS" id="basic-nav-dropdown">
               <NavDropdown.Item href="/tele">INSPECCION TELEVISIVA </NavDropdown.Item>
               <NavDropdown.Item href="/ambiental">SANEAMIENTO AMBIENTAL</NavDropdown.Item>

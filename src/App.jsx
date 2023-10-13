@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import { Balde } from "./pages/Balde";
 import { Tele } from "./pages/Tele";
 import { Principal } from "./pages/Principal";
@@ -14,13 +14,13 @@ import React from 'react'
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
     <Navigation></Navigation>
     <Navigation2></Navigation2>
       <Routes>
         <Route path="/balde" element={<Balde/>}/>
         <Route path="/tele" element={<Tele/>}/>
-        <Route path="/" element={<Navigate to="/tele"/>}/>
+        <Route path="/" element={<Principal/>}/>
         <Route path="/ambiental" element={<Ambiental/>}/>
         <Route path="/topografia" element={<Topografia/>}/>
         <Route path="/ubicanos" element={<Ubicanos/>}/>
