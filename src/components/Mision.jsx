@@ -13,7 +13,7 @@ export const Mision = () => {
       <div className="columna">
         <h2>Nuestra Visión</h2>
         <p>
-        Ser reconocidos como líderes en la industria de servicios de alcantarillado, destacando por nuestra excelencia operativa, innovación constante y compromiso inquebrantable con la preservación del medio ambiente. Buscamos ser el socio preferido para comunidades y empresas que valoran la calidad, la responsabilidad y la sostenibilidad en el mantenimiento de sus sistemas de alcantarillado."
+        Ser reconocidos como líderes en la industria de servicios de alcantarillado, destacando por nuestra excelencia operativa, innovación constante y compromiso inquebrantable. Seremos el socio preferido para comunidades y empresas que valoran la calidad, responsabilidad y sostenibilidad de sus sistemas de alcantarillado.
         </p>
       </div>
     </div>

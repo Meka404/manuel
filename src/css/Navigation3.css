@@ -1,102 +1,402 @@
-.navega3{
-    
+/* Estilos base para dispositivos mayores a 767px */
+.navega3 {
   top: 130px;
- 
   margin-left: 16%;
-  
   color: #fff;
   width: 70%;
   z-index: 10;
   position: absolute;
- align-items: center;
-
-} 
-.navega3 h1{
-font-size: 50px;
-
+  align-items: center;
 }
-.navega3 .navega33{
-background: linear-gradient(to right,  #006489, #5aa0b9);
-padding-top: 15px;
-margin-left: 0%;
-margin-right: 0%;
-padding-bottom: 15px;
-align-items: center;
-justify-content: center;
-font-size: 15px;
 
-
+.navega3 h1 {
+  font-size: 50px;
 }
+
+.navega3 .navega33 {
+  background: linear-gradient(to right, #006489, #5aa0b9);
+  padding-top: 15px;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  width: 100%;
+}
+
 .navega33 .nav-link {
-color: white; /* Color de texto para los enlaces */
-
+  color: white;
 }
-.NavDropdown{
-font-size: 15px;
 
+.NavDropdown {
+  font-size: 15px;
 }
+
 .navega3 h1, .navega3 h2 {
-line-height: 20px; /* Ajusta el valor según tus necesidades */
-
+  line-height: 20px;
 }
 
-.navega33 .nav-link:nth-child(1) {
-margin-right: 80px; /* Ajusta el valor según tus necesidades */
-}
-
-.navega33 .nav-link:nth-child(2) {
-margin-right: 80px; /* Ajusta el valor según tus necesidades */
-}
-
-
-.navega33 .nav-link:nth-child(3) {
-margin-right: 80px; /* Ajusta el valor según tus necesidades */
-}
-
+.navega33 .nav-link:nth-child(1),
+.navega33 .nav-link:nth-child(2),
+.navega33 .nav-link:nth-child(3),
 .navega33 .nav-link:nth-child(4) {
-margin-right: 80px; /* Ajusta el valor según tus necesidades */
+  margin-right: 80px;
 }
-
 
 .navega33 .nav-link:hover {
-color: black/* Color de texto al pasar el cursor sobre los enlaces */
+  color: black;
 }
 
-
-/*COLOR NAVEGACION 1*/
 .navega33 .dropdown-menu {
-/*background-color: rgb(202, 70, 70); /* Color de fondo del menú desplegable */
-font-size: 15px;
-position: relative;
-background-color: transparent;
+  font-size: 15px;
+  position: relative;
+  background-color: transparent;
 }
-/*COLOR NAVEGACION 2*/
-.navega33 .dropdown-item {
-color: white; /* Color de texto para los elementos del menú desplegable */
-/*background:  rgb(8, 66, 114);*/
-font-size: 10px;
-width: 400px;
-position: relative;
 
+.navega33 .dropdown-item {
+  color: white;
+  font-size: 10px;
+  width: 400px;
+  position: relative;
 }
 
 .navega33 .dropdown-menu::before {
-content: "";
-/*background-attachment: local; */
-position: absolute;
-top: 0;
-left: 0;
-background-size: cover;
-
-background-color: rgba(33, 34, 36, 0.8); 
-width: 100%;
-height: 100%;
-opacity: 1;
-z-index: -1;
-
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-color: rgba(33, 34, 36, 0.8);
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: -1;
 }
+
 .navega33 .dropdown-item:hover {
-/*background-color: #007bff; /* Color de fondo al pasar el cursor sobre los elementos del menú desplegable */
-background: linear-gradient(to right,  #006489, #5aa0b9);
-color: #fff; /* Color de texto al pasar el cursor sobre los elementos del menú desplegable */
+  background: linear-gradient(to right, #006489, #5aa0b9);
+  color: #fff;
+}
+
+/* Estilos para dispositivos con un ancho máximo de 767px */
+@media (max-width: 452px) {
+  .navega3 {
+    /* Estilos personalizados para pantallas de hasta 452px */
+    top: 0; /* Ejemplo de estilo */
+    margin-left: 0; /* Ejemplo de estilo */
+    width: 100%; /* Ejemplo de estilo */
+    text-align: center; /* Ejemplo de estilo */
+    padding: 10px; /* Ejemplo de estilo */
+    position: relative; /* Ejemplo de estilo */
+  }
+
+  .navega3 h1 {
+    /* Estilos personalizados para el título h1 en pantallas de hasta 452px */
+    font-size: 30px; /* Ejemplo de estilo */
+  }
+
+  .navega3 .navega33 {
+    /* Estilos personalizados para .navega33 en pantallas de hasta 452px */
+    padding-top: 10px; /* Ejemplo de estilo */
+    padding-bottom: 10px; /* Ejemplo de estilo */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  /* Puedes repetir este patrón para otros estilos que necesites personalizar */
+  .navega33 .nav-link {
+    /* Estilos personalizados para los enlaces en pantallas de hasta 452px */
+    color: white; /* Ejemplo de estilo */
+  }
+
+  .navega33 .nav-link:nth-child(1),
+  .navega33 .nav-link:nth-child(2),
+  .navega33 .nav-link:nth-child(3),
+  .navega33 .nav-link:nth-child(4) {
+    /* Estilos personalizados para los primeros cuatro enlaces en pantallas de hasta 452px */
+    margin-right: 10px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-menu {
+    /* Estilos personalizados para el menú desplegable en pantallas de hasta 452px */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-item {
+    /* Estilos personalizados para los elementos del menú desplegable en pantallas de hasta 452px */
+    font-size: 10px; /* Ejemplo de estilo */
+    width: auto; /* Ejemplo de estilo */
+  }
+}
+@media (max-width: 820px) {
+  .navega3 {
+    /* Estilos personalizados para pantallas de hasta 452px */
+    top: 0; /* Ejemplo de estilo */
+    margin-left: 0; /* Ejemplo de estilo */
+    width: 100%; /* Ejemplo de estilo */
+    text-align: center; /* Ejemplo de estilo */
+    padding: 10px; /* Ejemplo de estilo */
+    position: relative; /* Ejemplo de estilo */
+  }
+
+  .navega3 h1 {
+    /* Estilos personalizados para el título h1 en pantallas de hasta 452px */
+    font-size: 30px; /* Ejemplo de estilo */
+  }
+
+  .navega3 .navega33 {
+    /* Estilos personalizados para .navega33 en pantallas de hasta 452px */
+    padding-top: 10px; /* Ejemplo de estilo */
+    padding-bottom: 10px; /* Ejemplo de estilo */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  /* Puedes repetir este patrón para otros estilos que necesites personalizar */
+  .navega33 .nav-link {
+    /* Estilos personalizados para los enlaces en pantallas de hasta 452px */
+    color: white; /* Ejemplo de estilo */
+  }
+
+  .navega33 .nav-link:nth-child(1),
+  .navega33 .nav-link:nth-child(2),
+  .navega33 .nav-link:nth-child(3),
+  .navega33 .nav-link:nth-child(4) {
+    /* Estilos personalizados para los primeros cuatro enlaces en pantallas de hasta 452px */
+    margin-right: 10px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-menu {
+    /* Estilos personalizados para el menú desplegable en pantallas de hasta 452px */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-item {
+    /* Estilos personalizados para los elementos del menú desplegable en pantallas de hasta 452px */
+    font-size: 10px; /* Ejemplo de estilo */
+    width: auto; /* Ejemplo de estilo */
+  }
+}
+/* CSS */
+/* Agregar estos estilos a tu archivo CSS */
+
+/* Estilos para el menú desplegable en modo responsive */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    text-align: right; /* Alinea el menú a la derecha */
+    background-color: #045e88; /* Cambia el color de fondo del menú desplegable */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Alinea los elementos de navegación en columna */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0; /* Espaciado entre elementos de navegación */
+    color: rgb(0, 0, 0); /* Color de texto en el menú desplegable */
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: #045e88; /* Cambia el color de fondo al pasar el cursor sobre los elementos */
+    color: rgb(0, 0, 0); /* Cambia el color de texto al pasar el cursor sobre los elementos */
+  }
+  .navbar-toggler {
+    order: 1;
+  }
+
+  .navbar-collapse {
+    order: 2;
+  }
+}
+@media (max-width: 720px) {
+  .navega3 {
+    /* Estilos personalizados para pantallas de hasta 452px */
+    top: 0; /* Ejemplo de estilo */
+    margin-left: 0; /* Ejemplo de estilo */
+    width: 100%; /* Ejemplo de estilo */
+    text-align: center; /* Ejemplo de estilo */
+    padding: 10px; /* Ejemplo de estilo */
+    position: relative; /* Ejemplo de estilo */
+  }
+
+  .navega3 h1 {
+    /* Estilos personalizados para el título h1 en pantallas de hasta 452px */
+    font-size: 30px; /* Ejemplo de estilo */
+  }
+
+  .navega3 .navega33 {
+    /* Estilos personalizados para .navega33 en pantallas de hasta 452px */
+    padding-top: 10px; /* Ejemplo de estilo */
+    padding-bottom: 10px; /* Ejemplo de estilo */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  /* Puedes repetir este patrón para otros estilos que necesites personalizar */
+  .navega33 .nav-link {
+    /* Estilos personalizados para los enlaces en pantallas de hasta 452px */
+    color: white; /* Ejemplo de estilo */
+  }
+
+  .navega33 .nav-link:nth-child(1),
+  .navega33 .nav-link:nth-child(2),
+  .navega33 .nav-link:nth-child(3),
+  .navega33 .nav-link:nth-child(4) {
+    /* Estilos personalizados para los primeros cuatro enlaces en pantallas de hasta 452px */
+    margin-right: 10px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-menu {
+    /* Estilos personalizados para el menú desplegable en pantallas de hasta 452px */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-item {
+    /* Estilos personalizados para los elementos del menú desplegable en pantallas de hasta 452px */
+    font-size: 10px; /* Ejemplo de estilo */
+    width: auto; /* Ejemplo de estilo */
+  }
+}
+@media (max-width: 1080px) {
+  .navega3 {
+    /* Estilos personalizados para pantallas de hasta 452px */
+    top: 0; /* Ejemplo de estilo */
+    margin-left: 0; /* Ejemplo de estilo */
+    width: 100%; /* Ejemplo de estilo */
+    text-align: center; /* Ejemplo de estilo */
+    padding: 10px; /* Ejemplo de estilo */
+    position: relative; /* Ejemplo de estilo */
+  }
+
+  .navega3 h1 {
+    /* Estilos personalizados para el título h1 en pantallas de hasta 452px */
+    font-size: 30px; /* Ejemplo de estilo */
+  }
+
+  .navega3 .navega33 {
+    /* Estilos personalizados para .navega33 en pantallas de hasta 452px */
+    padding-top: 10px; /* Ejemplo de estilo */
+    padding-bottom: 10px; /* Ejemplo de estilo */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  /* Puedes repetir este patrón para otros estilos que necesites personalizar */
+  .navega33 .nav-link {
+    /* Estilos personalizados para los enlaces en pantallas de hasta 452px */
+    color: white; /* Ejemplo de estilo */
+  }
+
+  .navega33 .nav-link:nth-child(1),
+  .navega33 .nav-link:nth-child(2),
+  .navega33 .nav-link:nth-child(3),
+  .navega33 .nav-link:nth-child(4) {
+    /* Estilos personalizados para los primeros cuatro enlaces en pantallas de hasta 452px */
+    margin-right: 10px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-menu {
+    /* Estilos personalizados para el menú desplegable en pantallas de hasta 452px */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-item {
+    /* Estilos personalizados para los elementos del menú desplegable en pantallas de hasta 452px */
+    font-size: 10px; /* Ejemplo de estilo */
+    width: auto; /* Ejemplo de estilo */
+  }
+}
+@media (max-width: 375px) {
+  .navega3 {
+    /* Estilos personalizados para pantallas de hasta 452px */
+    top: 0; /* Ejemplo de estilo */
+    margin-left: 0; /* Ejemplo de estilo */
+    width: 100%; /* Ejemplo de estilo */
+    text-align: center; /* Ejemplo de estilo */
+    padding: 10px; /* Ejemplo de estilo */
+    position: relative; /* Ejemplo de estilo */
+  }
+
+  .navega3 h1 {
+    /* Estilos personalizados para el título h1 en pantallas de hasta 452px */
+    font-size: 30px; /* Ejemplo de estilo */
+  }
+
+  .navega3 .navega33 {
+    /* Estilos personalizados para .navega33 en pantallas de hasta 452px */
+    padding-top: 10px; /* Ejemplo de estilo */
+    padding-bottom: 10px; /* Ejemplo de estilo */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  /* Puedes repetir este patrón para otros estilos que necesites personalizar */
+  .navega33 .nav-link {
+    /* Estilos personalizados para los enlaces en pantallas de hasta 452px */
+    color: white; /* Ejemplo de estilo */
+  }
+
+  .navega33 .nav-link:nth-child(1),
+  .navega33 .nav-link:nth-child(2),
+  .navega33 .nav-link:nth-child(3),
+  .navega33 .nav-link:nth-child(4) {
+    /* Estilos personalizados para los primeros cuatro enlaces en pantallas de hasta 452px */
+    margin-right: 10px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-menu {
+    /* Estilos personalizados para el menú desplegable en pantallas de hasta 452px */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-item {
+    /* Estilos personalizados para los elementos del menú desplegable en pantallas de hasta 452px */
+    font-size: 10px; /* Ejemplo de estilo */
+    width: auto; /* Ejemplo de estilo */
+  }
+}
+@media (max-width: 605px) {
+  .navega3 {
+    /* Estilos personalizados para pantallas de hasta 452px */
+    top: 0; /* Ejemplo de estilo */
+    margin-left: 0; /* Ejemplo de estilo */
+    width: 100%; /* Ejemplo de estilo */
+    text-align: center; /* Ejemplo de estilo */
+    padding: 10px; /* Ejemplo de estilo */
+    position: relative; /* Ejemplo de estilo */
+  }
+
+  .navega3 h1 {
+    /* Estilos personalizados para el título h1 en pantallas de hasta 452px */
+    font-size: 30px; /* Ejemplo de estilo */
+  }
+
+  .navega3 .navega33 {
+    /* Estilos personalizados para .navega33 en pantallas de hasta 452px */
+    padding-top: 10px; /* Ejemplo de estilo */
+    padding-bottom: 10px; /* Ejemplo de estilo */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  /* Puedes repetir este patrón para otros estilos que necesites personalizar */
+  .navega33 .nav-link {
+    /* Estilos personalizados para los enlaces en pantallas de hasta 452px */
+    color: white; /* Ejemplo de estilo */
+  }
+
+  .navega33 .nav-link:nth-child(1),
+  .navega33 .nav-link:nth-child(2),
+  .navega33 .nav-link:nth-child(3),
+  .navega33 .nav-link:nth-child(4) {
+    /* Estilos personalizados para los primeros cuatro enlaces en pantallas de hasta 452px */
+    margin-right: 10px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-menu {
+    /* Estilos personalizados para el menú desplegable en pantallas de hasta 452px */
+    font-size: 14px; /* Ejemplo de estilo */
+  }
+
+  .navega33 .dropdown-item {
+    /* Estilos personalizados para los elementos del menú desplegable en pantallas de hasta 452px */
+    font-size: 10px; /* Ejemplo de estilo */
+    width: auto; /* Ejemplo de estilo */
+  }
 }

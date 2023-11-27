@@ -1,139 +1,211 @@
-#topografia1-titulo{
-    color:#006489;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    text-align: center;
+#topografia1-titulo {
+  color: #006489;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
 }
-#topografia1-tec{
-    color:#006489;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    text-align: center;
-  }
 
-  #topografia1-tec2{
-    color:black;
-    font-size: 150%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-weight: normal;
-    text-align: center;
-    padding-bottom: 6%;
-  }
+#topografia1-tec {
+  color: #006489;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+}
 
-  #topografia1-tec3{
-    color:black;
-    font-size: 120%;
-    padding-top: 0%;
-    padding-left: 8%;
-    padding-right: 8%;
-    font-weight: normal;
-    text-align: center;
-    padding-bottom: 0%;
-  }
+#topografia1-tec2 {
+  color: black;
+  font-size: 150%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 6%;
+}
 
-
+#topografia1-tec3 {
+  color: black;
+  font-size: 120%;
+  padding-top: 0%;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 0%;
+}
 
 .two-topografia1 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Espacio entre las columnas */
-  }
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Espacio entre las columnas */
+}
 
+.columna-topografia1 {
+  margin-top: 3%;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.image-topografia1 {
+  width: 50%;
+  display: flex;
+  margin-top: 3%;
+  flex-direction: column; /* Añade esta propiedad para apilar las imágenes verticalmente */
+  align-items: center; /* Centra las imágenes verticalmente */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.image-topografia1 img {
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 13%;
+  margin-top: 8%;
+}
+
+.two-topografia1 h1 {
+  margin-top: 10px;
+  padding-left: 8%;
+  text-align: left;
+  padding-bottom: 2%;
+  color: #006489;
+  font-size: 20px;
+}
+
+.two-topografia1 h2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  padding-bottom: 4%;
+}
+
+.topografia1-list {
+  list-style-type: none; /* Elimina el tipo de viñeta predeterminado */
+  padding: 0;
+  padding-bottom: 4%;
+}
+
+.topografia1-list li::before {
+  content: "\2713"; /* Unicode para el símbolo de marca de verificación (✓) */
+  margin-left: 10%;
+  font-size: 30px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  line-height: 1;
+  color: red;
+}
+
+.two-topografia1 h3 {
+  margin-left: 14%;
+  margin-right: 10%;
+  text-align: justify;
+  color: black;
+  font-size: 90%;
+  font-weight: normal;
+  padding-bottom: 4%;
+}
+
+.lista2 {
+  list-style-type: none; /* Elimina el tipo de viñeta predeterminado */
+  padding: 0;
+  padding-bottom: 4%;
+}
+
+.lista2 li::before {
+  content: "\2713"; /* Unicode para el símbolo de marca de verificación (✓) */
+  margin-left: 10%;
+  font-size: 30px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  line-height: 1;
+  color: rgb(14, 51, 155);
+}
+
+/* Media Query para pantallas más pequeñas (máximo 452px) */
+@media (max-width: 782px) {
+  #topografia1-tec2 {
+    font-size: 14px; /* Ajusta el tamaño de fuente según tus preferencias */
+    margin:5%;
+  }
+  #topografia1-tec3 {
+    font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+  .topografia1-list {
+    font-size: 14px; /* Tamaño de fuente más pequeño para la lista en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 782px) {
+  .two-topografia1 h2 {
+    font-size: 14px; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
+  }
+  .two-topografia1 h3 {
+    font-size: 14px; /* Tamaño de fuente aún más pequeño para h3 en pantallas más pequeñas */
+  }
+  .two-topografia1 {
+    flex-direction: column; /* Cambia la dirección de los elementos a apilados verticalmente */
+  }
+  
   .columna-topografia1 {
     margin-top: 3%;
     flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 14px;
   }
+
   .image-topografia1 {
-    width: 50%;
-    display: flex;
+    width: 100%; /* Ajusta el ancho al 100% para que se adapte al ancho de la pantalla */
     margin-top: 3%;
-    flex-direction: column; /* Añade esta propiedad para apilar las imágenes verticalmente */
-    align-items: center; /* Centra las imágenes verticalmente */
+    flex-direction: column;
+    align-items: center;
     border: 1px solid #ccc;
     box-sizing: border-box;
     padding: 10px;
   }
 
   .image-topografia1 img {
-    
-    max-width: 100%;
-  width: 80%;
-  height: 60%;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 13%;
-  margin-top: 8%;
-
-
-
+    max-width: 100%; /* Ajusta el ancho de la imagen al 100% de su contenedor */
+    width: 80%; /* Cambia el ancho al 80% */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 13%;
+    margin-top: 8%;
   }
 
-
-
-
-  .two-topografia1 h1{
-    
+  .two-topografia1 h1 {
     margin-top: 10px;
     padding-left: 8%;
-    text-align: left;
+    text-align: center; /* Alinea el texto al centro */
     padding-bottom: 2%;
-    color:#006489;
-    font-size: 150%;
-
+    color: #006489;
+    font-size: 16px;
   }
 
-  .two-topografia1 h2{
+  .two-topografia1 h2 {
     margin-left: 10%;
     margin-right: 10%;
     text-align: justify;
     color: black;
-    font-size: 20px;
+    font-size: 13px;
     font-weight: normal;
     padding-bottom: 4%;
   }
-
-
-
-  .topografia1-list {
-    list-style-type: none; /* Elimina el tipo de viñeta predeterminado */
-    padding: 0; /* Elimina el espacio interior de la lista */
-    padding-bottom: 4%;
-  }
-  
   .topografia1-list li::before {
     content: "\2713"; /* Unicode para el símbolo de marca de verificación (✓) */
-    margin-left: 10%; /* Espacio entre la marca de verificación y el texto */
-    font-size: 40px; /* Ajusta el tamaño de la fuente según tus preferencias */
-  line-height: 1;
-  color: red; 
+    margin-left: 10%;
+    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    line-height: 1;
+    color: red;
   }
-
-
-  .two-topografia1 h3{
-    margin-left: 14%;
-    margin-right: 10%;
-    text-align: justify;
-    color: black;
-    font-size: 90%;
-    font-weight: normal;
-    padding-bottom: 4%;
-  }
-
-
-  .lista2 {
-    list-style-type: none; /* Elimina el tipo de viñeta predeterminado */
-    padding: 0; /* Elimina el espacio interior de la lista */
-    padding-bottom: 4%;
-  }
-  
   .lista2 li::before {
     content: "\2713"; /* Unicode para el símbolo de marca de verificación (✓) */
-    margin-left: 10%; /* Espacio entre la marca de verificación y el texto */
-    font-size: 40px; /* Ajusta el tamaño de la fuente según tus preferencias */
-  line-height: 1;
-  color: rgb(14, 51, 155); 
+    font-size: 25px; /* Ajusta el tamaño de la fuente según tus preferencias */
   }
+}

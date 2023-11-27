@@ -25,7 +25,6 @@ export function Topografia1() {
           una ejecución precisa en cada estudio que llevamos a cabo.
         </em>
       </h2>
-
       <br></br>
       <h2 id="topografia1-tec3">
         <em>
@@ -49,7 +48,6 @@ export function Topografia1() {
           Documentación necesaria para herencias, divorcios y compra-venta.
         </li>
       </ul>
-
       <div className="two-topografia1">
         <div className="columna-topografia1">
           <h1>TOPOGRAFIA CON DRONES </h1>
@@ -62,7 +60,6 @@ export function Topografia1() {
             crea un modelo digital del terreno que registra la topografía del
             terreno.
           </h2>
-
           <h2>
             Los drones pueden ser útiles en otros tipos de levantamientos, como
             los de edificios, en los que pueden inspeccionarse tejados
@@ -104,19 +101,11 @@ export function Topografia1() {
             carreteras o vías de ferrocarril.{" "}
           </h3>
           </ul>
-         
-        
-          
-        
-         
         </div>
-
         <div className="image-topografia1">
           <img src={dron1} alt="Imagen" />
-     
         </div>
       </div>
-
       <div>
         <h1 id="topografia1-tec">¿Necesitas un Servicio topografico?</h1>
         <h2 id="topografia1-tec2">

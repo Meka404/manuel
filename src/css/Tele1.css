@@ -1,44 +1,57 @@
-
+/* Estilos por defecto para pantallas más grandes */
 .two-columna1 {
-    display: flex;
-    justify-content: space-between;
-    
-    
-    margin-bottom: 20px; /* Espacio entre las columnas */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Espacio entre las columnas */
+}
+
+.columna1 {
+  margin-top: 3%;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.image-columna1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.two-columna1 h1 {
+  margin-top: 10px;
+  text-align: center;
+  color: #006489;
+  font-size: 250%;
+}
+
+.two-columna1 h2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* Estilos para pantallas más pequeñas (responsive) */
+@media (max-width: 768px) {
+  .two-columna1 {
+    flex-direction: column; /* Cambia a una disposición de columna */
   }
-  
+
   .columna1 {
     margin-top: 3%;
-   
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  
-  .image-columna1 img {
-    max-width: 100%;
-    height: auto;
+    margin-bottom: 20px; /* Espacio entre las columnas */
   }
 
-
- 
-
-  .two-columna1 h1{
-    
-    margin-top: 10px;
-    
-    text-align: center;
-    color:#006489;
-    font-size: 250%;
-
-  }
-
-  .two-columna1 h2{
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: justify;
-    color: black;
+  .two-columna1 h1 {
+    font-size: 200%; /* Reduce el tamaño de fuente para pantallas más pequeñas */
     font-size: 20px;
-    font-weight: normal;
   }
+
+  .two-columna1 h2 {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
+  }
+}

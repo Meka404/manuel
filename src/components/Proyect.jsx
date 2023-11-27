@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/Proyect.css";
 import televisiva1 from "../assets/televisiva1.jpg";
 import televisiva2 from "../assets/televisiva2.jpg";
@@ -10,28 +10,34 @@ import foto7 from "../assets/foto7.jpg";
 import foto8 from "../assets/foto8.jpg";
 import foto9 from "../assets/foto9.jpg";
 import { Container } from "react-bootstrap";
+
 export const Proyect = () => {
-  const cardsData=[
-    {id:1, image:televisiva1,text:"texto1"},
-    {id:2, image:televisiva2,text:"texto2"},
-    {id:3, image:televisiva3,text:"texto3"},
-    {id:4, image:balde1,text:"texto4"},
-    {id:5, image:agua,text:"texto5"},
-    {id:6, image:foto7,text:"texto6"},
-    {id:7, image:foto8,text:"texto7"},
-    {id:8, image:foto9,text:"texto8"},
-    {id:9, image:foto9,text:"texto9"},
+  const cardsData = [
+    { id: 1, image: foto8, text: "ACCIONA AGUA S.A." },
+    { id: 2, image: foto8, text: "CONTRALORIA GENERAL DE LA REPUBLICA" },
+    { id: 3, image: foto8, text: "CONTRALORIA GENERAL DE LA REPUBLICA" },
+    { id: 4, image: foto8, text: "Cabo verde S.A" },
+    { id: 5, image: foto8, text: "CONSORCIO SANEAMIENTO LIMA NORTE LOTE 03" },
+    { id: 6, image: foto8, text: "CONSORCIO LIMA NORTE LOTE 2" },
+    { id: 7, image: foto8, text: "CONSORCIO JULIACA" },
+    { id: 8, image: foto8, text: "GITEC CONSULT GMBH" },
+    { id: 9, image: foto8, text: "CONSORCIO PUCALLPA" },
+    { id: 10, image: foto8, text: "proyecto 10" },
+    { id: 11, image: foto8, text: "proyecto 11" },
   ];
+
   return (
     <div className="cardp-grid">
-      {cardsData.map((card)=>(
+      {cardsData.map((card) => (
         <div className="cardp" key={card.id}>
-          <img src={card.image} alt={`Imagen ${card.id}`}></img>
-          <p>{card.text}</p>
+          <div className="image-container">
+            <img src={card.image} alt={`Imagen ${card.id}`} />
+            <div className="text-overlay">
+              <p>{card.text}</p>
+            </div>
+          </div>
         </div>
       ))}
     </div>
-  )
- 
+  );
 };
-  

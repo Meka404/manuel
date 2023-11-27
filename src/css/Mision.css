@@ -1,67 +1,52 @@
 .columnas-container {
-    padding-top: 0%;
-    padding-bottom: 0%;
-    background-color: #006489;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #006489;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row; /* Cambia a flex-direction: row */
+  width: 100%;
+  text-align: center;
+  height: 240px;
+}
 
-  }
-  
-  .columna {
-    flex: 1;
-    padding: 30px;
-   
-    margin-bottom: 0%;
-  }
-  .columna:nth-child(1) {
+.columna {
+  flex: 1;
+  padding: 30px;
+  margin-bottom: 0;
+  /* width: 100%; Quitar esto para que no ocupe el 100% del ancho */
+}
+
+.columna:nth-child(1) {
   background-color: #006489;
   color: white;
-  
 }
 
 .columna:nth-child(2) {
-  /*background-color: #0488b8;*/
   background-color: rgba(19, 15, 15, 0.808);
-  
-
   color: white;
 }
+
+.columna h2 {
+  font-size: 22px; /* Tamaño de letra más grande */
+  color: white;
+}
+
+.columna p {
+  font-size: 18px; /* Tamaño de letra más grande */
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .columnas-container {
+    padding-top: 0;
+    margin-top: 0;
+    height: auto;
+    flex-direction: column; /* Restablecer a flex-direction: column en modo responsive */
+  }
+
   .columna h2 {
-    font-size: 20px;
-    color: white;
+    font-size: 12px; /* Asegúrate de especificar una unidad (px) para el tamaño de fuente */
   }
-  
-  .columna p {
-    font-size: 16px;
-    color: white;
-  }
-
-
-  @media (max-width: 767px) {
-    .columnas-container {
-      padding-top: 0%;
-     margin-top: 0px;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      height: 150px;
-    }
-    .columna h2 {
-      font-size: 12px;
-      color: white;
-    }
-    
-    .columna p {
-      font-size: 8px;
-      color: white;
-    }
-    .columna {
-      flex: 1;
-      padding-top: 20px;
-      padding-bottom: 10px;
-    }
-  }
+}

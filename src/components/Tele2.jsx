@@ -14,5 +14,3 @@ export function Tele2() {
   </div>
   )
 }
-
-

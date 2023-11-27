@@ -14,7 +14,6 @@ export function Tele4() {
       <div className="two-columna4">
         <div className="columna4 text-columna4">
           <h1>Furgón laboratorio</h1>
-
           <h2>
             <em>
               Hidrotec cuenta con 5 vehículos laboratorio desde los cuales se
@@ -114,7 +113,7 @@ export function Tele4() {
             de manera gráfica, localizando las patologías encontradas.
           </h2>
           <h1>
-            PPrincipales características del software de inspección de tuberías:
+            Principales características del software de inspección de tuberías:
           </h1>
           <ul className="tele4-list">
             <li>Compatibilidad</li>
@@ -122,10 +121,6 @@ export function Tele4() {
             <li>Gestión de redes de saneamiento</li>
           </ul>
         </div>
-
-
-
-
         <div className="columna4 image-columna4">
           <img src={imagen5} alt="Imagen" />
           <img src={caja} alt="Imagen" />
@@ -133,14 +128,6 @@ export function Tele4() {
           <img src={bicamara} alt="Imagen" />
         </div>
       </div>
-
-
-
-
-
-
-
-
       <div>
         <h1 id="nos-tec">¿Necesitas una inspección de saneamiento de tuberías de agua con cámara TV?</h1>
         <h2 id="nos-tec2">Si te hace falta revisar los sistemas de alcantarillado o las cañerías de agua porque sospechas de posibles fugas de agua o cualquier otra incidencia como grietas u obturaciones, en Hidrotec, somos expertos.</h2>

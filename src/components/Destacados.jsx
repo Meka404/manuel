@@ -15,11 +15,9 @@ export function Destacados() {
             <div className="card-content">
               <h3 className="card-titlem">INSPECCION TELEVISIVA</h3>
               <p className="card-description">
-                En DNC contamos con 10 cámaras de TV para la inspección de todo
+              En DNC contamos con 10 cámaras de TV para la inspección de todo
                 tipo de canalizaciones, ya sean redes de alcantarillado , redes
-                de agua potable, redes contra incendios o bajantes de edificios,
-                a partir de 2 cm hasta 2,5 m de diámetro, destacando 3 equipos
-                preparados para trabajar en zonas industriales.
+                de agua potable, redes contra incendios o bajantes de edificios.
               </p>
             </div>
           </a>
@@ -35,7 +33,7 @@ export function Destacados() {
             <p className="card-description">
               Trabajamos incansablemente para preservar la salud de nuestros
               ecosistemas y comunidades. Desde la gestión de residuos hasta la
-              prevención de la contaminación
+              prevención de la contaminación.
             </p>
           </div>
           </a>

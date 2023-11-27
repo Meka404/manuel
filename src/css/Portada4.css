@@ -6,73 +6,60 @@ body {
   /*overflow: hidden; */
 }
 
-.grupo{
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 0%;
-    overflow: hidden;
-    width: 100%;
-    height: 60dvh;
-    margin-top: 0%;
-    position: relative;
-    
-    z-index: 0;
-  
+.grupo {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 60vh;
+  margin-top: 0;
+  position: relative;
+  z-index: 0;
+  text-align: center; /* Alinea el texto al centro horizontalmente */
 }
 
 .grupo img{
     height: 60dvh;
-    
     margin-bottom: 0%;
     width: 100%;
-   
-
-    
 }
-
-/*
-@media (max-width: 767px) {
-    .grupo img{
-        height: 300px;
-        
-    }
-    .grupo{
-        padding-top: 0px;
-        margin-bottom: 0%;
-        width: 100%;
-        margin-top: 0%;
-        height: auto;
-        position: relative;
-        z-index: 0;
-    }
-
-
-}
-*/
-
 .grupo .card {
-    background-color: transparent;
-    position: relative;
-    color: white;
-    z-index: 1;
-    width: 200px;
-    height: 300px;
-    font-size: 15px;
+  background-color: transparent;
+  position: relative;
+  color: white;
+  z-index: 1;
+  width: 210px;
+  height: 290px;
+  font-size: 15px;
+  margin: 0 auto; /* Centra el elemento horizontalmente */
+}
+.grupo .links {
+  color: rgb(255, 255, 255);
+}
+.grupo .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 34, 36, 0.8);
+  opacity: 0.7;
+  z-index: -1;
+}
+@media (max-width: 782px) {
+  .grupo img{
+      height: 470px;
+      
   }
-  .grupo .links{
-    color: rgb(255, 255, 255);
+  .grupo{
+      padding-top: 0px;
+      margin-bottom: 0%;
+      width: 100%;
+      margin-top: 0%;
+      height: auto;
+      position: relative;
+      z-index: 0;
   }
-  .grupo .card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 34, 36, 0.8); /* Puedes ajustar la opacidad cambiando el valor alfa (0.5 en este caso) */
-    /*background-color: #006489;*/
-    opacity: 0.7;
-
-
-    z-index: -1;
-  }
+}

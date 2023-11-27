@@ -1,34 +1,106 @@
-#ambiental-titulo{
-    color:#006489;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    text-align: center;
+#ambiental-titulo {
+  color: #006489;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
 }
-#ambiental-tec{
-    color:#006489;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    text-align: center;
-  }
 
-  #ambiental-tec2{
-    color:black;
-    font-size: 150%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-weight: normal;
-    text-align: center;
-    padding-bottom: 6%;
-  }
+#ambiental-tec {
+  color: #006489;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+}
 
-
-
-
+#ambiental-tec2 {
+  color: black;
+  font-size: 150%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 6%;
+}
 
 .two-ambiental {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Espacio entre las columnas */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Espacio entre las columnas */
+}
+
+.columna-ambiental {
+  margin-top: 3%;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.image-ambiental {
+  width: 50%;
+  display: flex;
+  margin-top: 3%;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.image-ambiental img {
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 13%;
+  margin-top: 13%;
+}
+
+.two-ambiental h1 {
+  margin-top: 10px;
+  padding-left: 8%;
+  text-align: left;
+  padding-bottom: 2%;
+  color: #006489;
+  font-size: 150%;
+}
+
+.two-ambiental h2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+  padding-bottom: 4%;
+}
+
+.ambiental-list {
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 4%;
+}
+.ambiental-list li{
+  font-size: 20px;
+}
+
+.ambiental-list li::before {
+  content: "\2713";
+  margin-left: 10%;
+  font-size: 40px;
+  line-height: 1;
+  color: red;
+}
+
+/* Media Query para pantallas más pequeñas (máximo 452px) */
+@media (max-width: 452px) {
+  .two-ambiental {
+    flex-direction: column;
+  }
+
+  .image-ambiental {
+    width: 100%;
   }
 
   .columna-ambiental {
@@ -38,67 +110,64 @@
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
+
+  .two-ambiental h1 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 130%; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+
+  .two-ambiental h2 {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+}
+/* Media Query para pantallas más pequeñas (máximo 452px) */
+@media (max-width: 782px) {
+  .two-ambiental {
+    flex-direction: column;
+  }
+
   .image-ambiental {
-    width: 50%;
-    display: flex;
+    width: 100%;
+  }
+
+  .columna-ambiental {
     margin-top: 3%;
-    flex-direction: column; /* Añade esta propiedad para apilar las imágenes verticalmente */
-    align-items: center; /* Centra las imágenes verticalmente */
+    flex: 1;
+    padding: 10px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    padding: 10px;
   }
 
-  .image-ambiental img {
-    
-    max-width: 100%;
-  width: 80%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 13%;
-  margin-top: 13%;
-
-
-
+  .two-ambiental h1 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 130%; /* Tamaño de fuente más pequeño para pantallas pequeñas */
   }
 
-
-
-
-  .two-ambiental h1{
-    
-    margin-top: 10px;
-    padding-left: 8%;
-    text-align: left;
-    padding-bottom: 2%;
-    color:#006489;
-    font-size: 150%;
-
+  .two-ambiental h2 {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
   }
 
-  .two-ambiental h2{
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: justify;
-    color: black;
-    font-size: 20px;
-    font-weight: normal;
-    padding-bottom: 4%;
+  /* Modificar el tamaño de fuente para #ambiental-tec2 */
+  #ambiental-tec2 {
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+    margin-left: 4%;
+    margin-right: 4%;
   }
-
-
-
-  .ambiental-list {
-    list-style-type: none; /* Elimina el tipo de viñeta predeterminado */
-    padding: 0; /* Elimina el espacio interior de la lista */
-    padding-bottom: 4%;
+  #ambiental-tec {
+    font-size: 25px;
   }
-  
   .ambiental-list li::before {
-    content: "\2713"; /* Unicode para el símbolo de marca de verificación (✓) */
-    margin-left: 10%; /* Espacio entre la marca de verificación y el texto */
-    font-size: 40px; /* Ajusta el tamaño de la fuente según tus preferencias */
-  line-height: 1;
-  color: red; 
+    font-size: 30px;
   }
+  .ambiental-list li{
+    font-size: 16px;
+  }
+}

@@ -1,8 +1,8 @@
 .empresas img{
-    width: 90%;
+    width: 100%;
     height: 100px;
     align-items: center;
-    padding-left: 10%;
+    margin: 0%;
 
 }
 .empresas{
@@ -40,3 +40,12 @@
     background-attachment: fixed;
 
   }
+  @media (max-width: 782px) {
+    .empresas img{
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        margin: 0%;
+    }
+    
+}

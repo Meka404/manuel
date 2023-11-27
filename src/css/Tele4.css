@@ -1,87 +1,121 @@
-
+/* Estilos por defecto para pantallas más grandes */
 .two-columna4 {
-    display: flex;
-    justify-content: space-between;
-    
-  
-    margin-bottom: 20px; /* Espacio entre las columnas */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Espacio entre las columnas */
+}
+
+.columna4 {
+  margin-top: 3%;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.image-columna4 img {
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  display: block; /* Para centrar la imagen horizontalmente */
+  margin: 0 auto; /* Alineación horizontal al centro */
+  margin-bottom: 13%;
+  margin-top: 13%;
+}
+
+.two-columna4 h1 {
+  margin-top: 10px;
+  padding-left: 8%;
+  text-align: left;
+  padding-bottom: 2%;
+  color: #006489;
+  font-size: 150%;
+}
+
+.two-columna4 h2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+  padding-bottom: 4%;
+}
+
+#nos-tec {
+  color: #006489;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+#nos-tec2 {
+  color: black;
+  font-size: 150%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 6%;
+}
+
+.tele4-list {
+  list-style-type: none; /* Elimina el tipo de viñeta predeterminado */
+  padding: 0; /* Elimina el espacio interior de la lista */
+  padding-bottom: 4%;
+}
+
+.tele4-list li::before {
+  content: "\2713"; /* Unicode para el símbolo de marca de verificación (✓) */
+  margin-left: 10%; /* Espacio entre la marca de verificación y el texto */
+  font-size: 40px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  line-height: 1;
+  color: red;
+}
+
+/* Estilos para pantallas más pequeñas (responsive) */
+@media (max-width: 768px) {
+  .two-columna4 {
+    flex-direction: column; /* Cambia a una disposición de columna */
+    margin: 2%;
   }
-   
+
   .columna4 {
     margin-top: 3%;
-   
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-   
+    margin-bottom: 20px; /* Espacio entre las columnas */
+    margin: 2%;
+    font-size: 14px;
   }
-  
-  
+
+  .two-columna4 h1 {
+    font-size: 130%; /* Reduce el tamaño de fuente para pantallas más pequeñas */
+    padding-left: 0; /* Elimina el espacio izquierdo adicional */
+    margin: 2%;
+    font-size: 14px;
+  }
+
+  .two-columna4 h2 {
+    margin-left: 0;
+    margin-right: 0;
+    margin: 2%;
+    font-size: 12px; /* Nuevo tamaño de fuente para pantallas más pequeñas */
+    font-size: 13px;
+  }
+
   .image-columna4 img {
-    
-    max-width: 100%;
-    width: 80%;
-    height: auto;
-    display: block; /* Para centrar la imagen horizontalmente */
-    margin: 0 auto; /* Alineación horizontal al centro */
-    margin-bottom: 13%;
-    margin-top: 13%;
+    width: 100%; /* Ajusta la anchura de la imagen al 100% en pantallas más pequeñas */
+    margin: 0; /* Elimina el margen en pantallas más pequeñas */
+  }
+  #nos-tec {
+    font-size: 120%;
+    margin: 2%; /* Nuevo tamaño de fuente para pantallas más pequeñas */
   }
 
- 
-
-  .two-columna4 h1{
-    
-    margin-top: 10px;
-    padding-left: 8%;
-    text-align: left;
-    padding-bottom: 2%;
-    color:#006489;
-    font-size: 150%;
-
+  #nos-tec2 {
+    font-size: 16px;
+    margin: 2%; /* Nuevo tamaño de fuente para pantallas más pequeñas */
   }
-
-  .two-columna4 h2{
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: justify;
-    color: black;
-    font-size: 20px;
-    font-weight: normal;
-    padding-bottom: 4%;
+  .tele4-list li::before,
+  .tele4-list{
+    font-size: 14px;
   }
-
-
-  #nos-tec{
-    color:#006489;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    text-align: center;
-  }
-
-  #nos-tec2{
-    color:black;
-    font-size: 150%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-weight: normal;
-    text-align: center;
-    padding-bottom: 6%;
-  }
-
-  .tele4-list {
-    list-style-type: none; /* Elimina el tipo de viñeta predeterminado */
-    padding: 0; /* Elimina el espacio interior de la lista */
-    padding-bottom: 4%;
-  }
-  
-  .tele4-list li::before {
-    content: "\2713"; /* Unicode para el símbolo de marca de verificación (✓) */
-    margin-left: 10%; /* Espacio entre la marca de verificación y el texto */
-    font-size: 40px; /* Ajusta el tamaño de la fuente según tus preferencias */
-  line-height: 1;
-  color: red; 
-  }
-
-
-  
+}

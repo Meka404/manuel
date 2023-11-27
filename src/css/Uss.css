@@ -1,108 +1,167 @@
 #innovacion{
-    color: white;
-    font-weight: normal;
-    font-size: 120%;
+  color: white;
+  font-weight: normal;
+  font-size: 150%;
+  text-align: center;
 }
 
 .filter-buttons {
-    display: flex; /* Utiliza Flexbox para alinear los botones horizontalmente */
-    /*gap: 1px; /* Espacio entre los botones */
-    padding-left: 16%;
-    padding-right: 16%;
-   
-    margin-top: 50px;
-    padding-bottom: 8%;
-    
-  }
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-bottom: 8%;
+}
+
+.sanitaria {
+  text-align: center;
+  padding-top: 80px;
+  position: relative;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 200px;
+  margin-bottom: 40px;
+}
+
+.sanitaria::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url('../assets/topografia-geodesia-dnc.jpg');
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  background-color: #08488d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+  margin-right: 0;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.filter-buttons button.active {
+  background-color: #071566;
+  width: 100%;
+  position: relative;
+  transition: width 0.3s;
+}
+
+.filter-buttons button:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.filter-buttons button:nth-child(3) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.sanitaria h3:before, .sanitaria h3:after {
+  margin: 0 15px 10px 10px;
+}
+
+.sanitaria h3:before, .sanitaria h3:after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #08488d;
+  display: inline-block;
+}
+
+#eligen{
+  color: white;
+  font-size: 350%;
+}
+
+#pioneros{
+  color: black;
+  font-size: 170%;
+}
+
+@media (max-width: 782px) {
   .sanitaria {
-    text-align: center;
-   padding-top: 80px;
-    position: relative; /* Agrega una posición relativa al contenedor */
-   /* Ruta de tu imagen de fondo */
-    /*background-size: cover;*/
-    
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-bottom: 200px;
-    margin-bottom: 150px;
-   
+      padding: 10px;
   }
-  
-  .sanitaria::before {
-    content: "";
-    /*background-attachment: local; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    
-    background-image: url('../assets/topografia-geodesia-dnc.jpg'); 
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-    z-index: -1;
-    background-attachment: fixed;
 
+  #eligen {
+      font-size: 24px;
   }
-  
 
+  #pioneros {
+      font-size: 22px;
+  }
+
+  .filter-buttons {
+      text-align: center;
+  }
 
   .filter-buttons button {
-    padding: 10px 20px;
-    background-color: #08488d; /* Color de fondo de los botones */
-    color: #fff; /* Color del texto de los botones */
-    border: none;
-    cursor: pointer;
-    border-radius: 0px; /* Bordes redondeados */
-    margin-right: 0;
-    width: 300px;
-    /*transition: all 0.3s;*/
-    
+      padding: 7px 14px;
+      font-size: 20px;
   }
 
-
-  .filter-buttons button.active {
-    background-color: #071566; /* Cambia el color de fondo para el botón activo */
-     /* Bordes redondeados */
-    width: 340px;
-    
-    position: relative; /* Superpone el botón activo sobre los demás */
-    /*z-index: 1; /* Asegura que el botón activo esté por encima de los demás */
-    transition: width 0.3s, border-radius 0.3s; 
+  #innovacion {
+      color: white;
+      font-weight: normal;
+      font-size: 120%;
+      text-align: center;
   }
-  
-  /* Aplicar borde izquierdo y borde-radius solo al primer botón (Servicio Integral) */
-.filter-buttons button:first-child {
-    
-    border-top-left-radius: 30px; /* Borde redondeado superior izquierdo */
-    border-bottom-left-radius: 30px; /* Borde redondeado inferior izquierdo */
-    
-  }
-
-
-  .filter-buttons button:nth-child(4) {
-   
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    
-  }
-
-
-  .sanitaria h3:before,.sanitaria h3:after {
-    margin: 0 15px 10px 10px;
-   
 }
-  .sanitaria h3:before,.sanitaria h3:after{
-    content: "";
-    width: 50px;
-    height: 4px;
-    background:  #08488d;
-    display: inline-block;
+
+@media (max-width: 452px) {
+  .sanitaria {
+      padding: 10px;
   }
-  #eligen{
-    color: white;
-    font-size: 350%;
+
+  #eligen {
+      font-size: 20px;
   }
-  #pioneros{
-    color: black;
+
+  #pioneros {
+      font-size: 16px;
   }
+
+  .filter-buttons {
+      text-align: center;
+  }
+
+  .filter-buttons button {
+      padding: 8px 16px;
+  }
+
+  #innovacion {
+      color: white;
+      font-size: 16px;
+  }
+}
+@media (max-width: 782px) {
+  /* Otras reglas CSS aquí */
+
+  #eligen {
+    font-size: 24px;
+  }
+
+  #pioneros {
+    font-size: 22px;
+  }
+
+  .filter-buttons button {
+    padding: 7px 14px;
+    font-size: 16px; /* Ajusta el tamaño de fuente de los botones para pantallas más pequeñas */
+  }
+
+  #innovacion {
+    font-size: 120%; /* Ajusta el tamaño de fuente de la sección "Innovación" para pantallas más pequeñas */
+  }
+}

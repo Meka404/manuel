@@ -1,7 +1,14 @@
 .custom-infowindow {
-    background-color: #FF5733; /* Cambia el color de fondo a tu elección */
-    color: #FFFFFF; /* Cambia el color del texto a tu elección */
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(161, 90, 19, 0.3);
+  background-color: #FF5733; /* Cambia el color de fondo a tu elección */
+  color: #FFFFFF; /* Cambia el color del texto a tu elección */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(161, 90, 19, 0.3);
+}
+
+@media (max-width: 768px) {
+  .custom-infowindow {
+      font-size: 14px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+      padding: 8px; /* Ajusta el espaciado interior para pantallas más pequeñas */
   }
+}
