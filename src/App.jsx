@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {HashRouter as Router, Route, Switch} from "react-router-dom";
 import { Balde } from "./pages/Balde";
 import { Tele } from "./pages/Tele";
 import { Principal } from "./pages/Principal";
