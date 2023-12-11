@@ -7,7 +7,7 @@ import ambiental4 from "../assets/ambiental4.jpg";
 export function Ambiental1() {
   return (
     <div>
-      <h1 id="ambiental-titulo">Saneamiento Ambiental y su importancia</h1>
+      <h1 id="ambiental-titulo">Saneamiento Ambiental e importancia</h1>
 
       <div className="two-ambiental">
         <div className="columna-ambiental">
